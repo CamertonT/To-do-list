@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+
+    <section>
+        <div class="container">
+            <div class="top-side">
+                <input type="text" name="text" id="inputText">
+                <button class="button button_insert" id="insert">Insert</button>
+            </div>
+            <ul class="list container__list">
+                <li class="list-item">
+                    <div class="list-item__descr">descr</div>
+                    <button class="button button_delete">delete</button>
+                </li>
+                <li class="list-item">
+                    <div class="list-item__descr">descr222</div>
+                    <button class="button button_delete">delete</button>
+                </li>
+                <li class="list-item">
+                    <div class="list-item__descr">descr3333</div>
+                    <button class="button button_delete" data-action="delete">delete</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- <section>
+        <label for="rub">RUB</label>
+        <input id="rub" type="text">
+        <label for="usd">USD</label>
+        <input id="usd" type="text">
+    </section> -->
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

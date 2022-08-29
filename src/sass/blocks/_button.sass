@@ -1,0 +1,35 @@
+@mixin btnOpasity
+    opacity: 0.9
+
+@mixin btnOpasity_hovered
+    opacity: 1
+
+.button
+    width: 100px
+    height: 25px
+    background-color: #444
+
+    &_insert
+        background-color: #465
+        @include btnOpasity
+
+        &:hover
+            @include btnOpasity_hovered
+    
+    &_delete
+        background-color: red
+        color: white
+        @include btnOpasity
+        margin-left: 5px
+
+        &:hover
+            @include btnOpasity_hovered
+    
+    &_complete
+        background-color: green
+        color: white
+        @include btnOpasity
+        margin-right: 5px 
+        
+        &:hover
+            @include btnOpasity_hovered
