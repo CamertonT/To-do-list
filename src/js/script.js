@@ -12,20 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     showList();
 
 
-    // function saveInLocalStrg (data) {
-    //     for (let i = 0; i < 10; i++) {
-    //         if (localStorage.getItem(i)) {
-    //             localStorage.setItem(i, data);
-    //         }
-    //     }
-    // }
-
-    // function removeFromLocalStrg (index) {
-    //     localStorage.removeItem(index);
-    // }
-
     function addTask () {
-        
         if (insertText.value == undefined || insertText.value == null || insertText.value == '') {
             alert('Введите задачу');
         } else {
@@ -105,26 +92,5 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // test
-    // const inputRub = document.querySelector('#rub'),
-    //       inputUsd = document.querySelector('#usd');
-
-    // inputRub.addEventListener('input', () => {
-    //     const request = new XMLHttpRequest();
-
-    //     request.open("GET", "js/data.json");
-    //     request.setRequestHeader('Content-type', 'application/json; charset=utf-8');
-    //     request.send();
-
-    //     request.addEventListener('load', () => {
-    //         if (request.status == 200) {
-    //             const response = JSON.parse(request.response);
-    //             inputUsd.value = (+inputRub.value / response.current.usd).toFixed(2);
-    //         } else {
-    //             inputUsd.value = 'Something happend';
-    //         }
-    //     });
-
-    // });
 
 });
